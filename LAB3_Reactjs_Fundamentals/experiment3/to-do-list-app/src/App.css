@@ -1,0 +1,128 @@
+/* src/App.css */
+body {
+  font-family: 'Sarabun', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin-top: 40px;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.todo-form input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.2s;
+}
+
+.todo-form button:hover {
+  background-color: #0284c7;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-item button:hover {
+  background: #dc2626;
+}
+
+.todo-item span {
+  cursor: pointer; /* เพิ่ม cursor เพื่อให้รู้ว่าคลิกได้ */
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+
+/* src/App.css */
+/* ... */
+.todo-item .edit-btn, .todo-item .save-btn {
+  background-color: #f59e0b;
+  color: white;
+  margin-right: 8px;
+}
+
+.todo-item .save-btn {
+  background-color: #22c55e;
+}
+
+.todo-item .edit-btn:hover {
+  background-color: #d97706;
+}
+
+.todo-item .save-btn:hover {
+  background-color: #16a34a;
+}
+
+.todo-item input[type="text"] {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  padding: 0.4rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.todo-item > div {
+  display: flex;
+  align-items: center;
+}
